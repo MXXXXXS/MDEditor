@@ -1,0 +1,40 @@
+{
+  "name": "md-editor",
+  "version": "1.0.0",
+  "description": "基于electron的简单markdown编辑器",
+  "main": "./app/main.js",
+  "dependencies": {
+    "markdown-it": "^8.4.2",
+    "vue": "^2.5.17",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.1",
+    "electron": "^4.0.4",
+    "electron-packager": "^13.0.1",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ep": "electron-packager --help",
+    "start": "webpack --config webpack.config.js & electron .",
+    "electron": "electron .",
+    "pack": "electron-packager app MDEditor --overwrite --out=MDEditor_built --icon=app/favicon.ico --platform=win32 --asar",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --watch --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MXXXXXS/MDEditor.git"
+  },
+  "keywords": [],
+  "author": "MXXXXXS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MXXXXXS/MDEditor/issues"
+  },
+  "homepage": "https://github.com/MXXXXXS/MDEditor#readme"
+}
